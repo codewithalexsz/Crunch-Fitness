@@ -1,0 +1,28 @@
+@use 'breakpoints';
+@use 'globals';
+@use 'sections';
+
+p{
+    margin-top: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
