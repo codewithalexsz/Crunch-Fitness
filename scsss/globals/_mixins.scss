@@ -1,0 +1,38 @@
+@use '../breakpoints/' as *;
+
+
+
+
+
+
+// BTN 
+@mixin btn-pink {
+    background-color: orangered;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 25px;
+    border: none;
+    height: 38px;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+
+@mixin header-bg {
+    background-image: url(/images/about-1.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+}
+
+// CLASSES CARD BG IMG
+
+@mixin ccd1-hover-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    background-position: center;
+    background-image: url(/images/yoga.jpg);
+}

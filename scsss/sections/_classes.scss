@@ -1,0 +1,88 @@
+
+@use '../breakpoints/' as *;
+@use '../globals/' as *;
+
+
+.classes {
+    background-color: #080b14;
+    padding: 2.3rem;
+
+
+    .ourclasses{
+        color: white;
+        font-size: $txt-miniheader-fontsize;
+        font-weight: $header-fontweight;
+    }
+
+    // CLASS CARDS
+    .classcards{
+        display: flex;
+        overflow: hidden;
+        gap: 10px;
+
+        .ccard{
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            padding: 1rem;
+            background-color: $btn-bg-pink;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            .ccinfo{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                justify-content: space-between;
+                .ccfoot{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+            .ccdesc{
+                max-width: 9rem;
+                font-weight: $txt-miniheader-fontweight;
+            }
+            .cctitle{
+                font-size: small;
+            }
+}
+    }
+    .ccauthor {
+        display: flex;
+        font-size: small;
+        gap: 8px;
+        img{
+            width: 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        }
+}
+.ccimg img {
+    width: 100px;
+    height: 95px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+}
+
+//  HOVER EFFECT OVER EACH CARD
+.ccd1  {
+    position: relative;
+    background-color: rgb(119, 73, 255) !important;
+    &:hover{
+        @include ccd1-hover-bg;
+    }
+}

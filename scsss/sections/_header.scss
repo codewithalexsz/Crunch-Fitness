@@ -1,3 +1,50 @@
 @use '../breakpoints/' as *;
 @use '../globals/' as *;
 
+
+// HEDER
+.header{
+    display: grid;
+    @include header-bg;
+    height: 900px;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        height: fit-content;
+        ul{
+            display: flex;
+            gap: 1rem;
+            font-weight: 700;
+            a {
+                color: white;
+            }
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: 700;
+            .fitness{
+                color: $btn-bg-blue;
+            }
+        }
+        
+    }
+    .hero {
+        color: white;
+        text-align: center;
+        h1 {
+            margin: 0 auto;
+            font-weight: $header-fontweight;
+            font-size: $header-cap-fontsize;
+            max-width: 30rem;
+        }
+        p {
+            color: aliceblue;
+        }
+    }
+}
+
+button {
+    @include btn-pink;
+}
