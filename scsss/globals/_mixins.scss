@@ -30,9 +30,49 @@
 // CLASSES CARD BG IMG
 
 @mixin ccd1-hover-bg {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.9;
     background-position: center;
     background-image: url(/images/yoga.jpg);
+}
+
+@mixin ccd2-hover-bg {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url(/images/swim.jpg);
+}
+
+@mixin ccd3-hover-bg {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url(/images/fitness.jpg);
+}
+
+@mixin ccd4-hover-bg {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    background-position: center;
+    background-image: url(/images/crunch\ abs.jpg);
 }

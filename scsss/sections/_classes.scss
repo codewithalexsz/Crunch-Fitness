@@ -6,10 +6,12 @@
 .classes {
     background-color: #080b14;
     padding: 2.3rem;
+    
 
 
     .ourclasses{
         color: white;
+        margin-bottom: 25px;
         font-size: $txt-miniheader-fontsize;
         font-weight: $header-fontweight;
     }
@@ -18,48 +20,51 @@
     .classcards{
         display: flex;
         overflow: hidden;
+        width: fit-content;
         gap: 10px;
 
-        .ccard{
+        .ccard {
             color: white;
             align-items: center;
             display: flex;
-            justify-content: space-between;
-            width: 400px;
+            
+            justify-content: space-around;
+            width: 500px !important;
+            height: 313px;
             padding: 1rem;
             background-color: $btn-bg-pink;
             border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
+            
+            
 
             .ccinfo{
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                 gap: 100px;
                 justify-content: space-between;
                 .ccfoot{
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
+                    gap: 15px;
                 }
             }
             .ccdesc{
-                max-width: 9rem;
+                max-width: 10rem;
                 font-weight: $txt-miniheader-fontweight;
+                font-size: 21px;
             }
-            .cctitle{
-                font-size: small;
+            .cctitle {
+                font-size: 17px;
             }
 }
     }
     .ccauthor {
         display: flex;
-        font-size: small;
+        font-size: 14px;
+        align-items: center;
         gap: 8px;
         img{
-            width: 20px;
+            width: 38px;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -68,8 +73,8 @@
         }
 }
 .ccimg img {
-    width: 100px;
-    height: 95px;
+    width: 240px;
+    height: 235px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -83,6 +88,31 @@
     position: relative;
     background-color: rgb(119, 73, 255) !important;
     &:hover{
+        cursor: pointer;
         @include ccd1-hover-bg;
+    }
+}
+.ccd2  {
+    // position: relative;
+    background-color: rgb(59, 105, 230) !important;
+    &:hover{
+        cursor: pointer;
+        @include ccd2-hover-bg;
+    }
+}
+.ccd3  {
+    position: relative;
+    background-color: rgb(255, 81, 0) !important;
+    &:hover{
+        cursor: pointer;
+        @include ccd3-hover-bg;
+    }
+}
+.ccd4  {
+    position: relative;
+    background-color: rgb(255, 79, 88) !important;
+    &:hover{
+        cursor: pointer;
+        @include ccd4-hover-bg;
     }
 }
