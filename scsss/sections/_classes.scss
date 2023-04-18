@@ -105,6 +105,7 @@
     background-color: rgb(255, 81, 0) !important;
     &:hover{
         cursor: pointer;
+        background-color: rgba(255, 81, 0, 0.438) !important;
         @include ccd3-hover-bg;
     }
 }

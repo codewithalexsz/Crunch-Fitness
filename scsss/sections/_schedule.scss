@@ -1,0 +1,53 @@
+@use '../breakpoints/' as *;
+@use '../globals/' as *;
+
+
+
+.scard {
+    height: 250px;
+    width: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $schedulecard-hover;
+
+   .scardtop {
+    display: flex;
+    justify-content: space-between;
+    .date {
+        font-size: 14px;
+    }
+    .exercise {
+        display: flex;
+        font-size: 13px;
+        span.exdot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: pink;
+            margin-right: 2px;
+    }
+   }
+    
+    .scardfoot {
+    
+       h2{
+        font-size: 14px;
+       }
+
+       .scardtitle{
+        font-size: 20px;
+       }
+
+       .scardauthor {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        .scaname{
+            font-size: 14px;
+           }
+       }
+    }
+}}
