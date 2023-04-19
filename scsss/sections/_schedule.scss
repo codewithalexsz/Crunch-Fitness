@@ -3,9 +3,35 @@
 
 
 
+.schedulecards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+.scardauthor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        
+}
+}
+
+.scardtitle {
+    font-size: 20px;
+    font-weight: bolder !important;
+   }
+
 .scard {
     height: 250px;
     width: 364px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,12 +62,10 @@
         font-size: 14px;
        }
 
-       .scardtitle{
-        font-size: 20px;
-       }
+       
 
        .scardauthor {
-        img {
+        .img {
             width: 40px;
             height: 40px;
         }
