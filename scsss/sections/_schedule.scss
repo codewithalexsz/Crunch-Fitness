@@ -2,6 +2,31 @@
 @use '../globals/' as *;
 
 
+.schedules {
+    padding: 75px 0;
+
+    .sechead {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.4rem 8rem;
+
+        .secheadleft {
+            display: flex;
+            input {
+                border: 2px dashed ;
+                padding: 10px;
+            }
+        }
+        .schedule{
+            font-size: 35px;
+            font-weight: 700;
+            margin-right: 14px;
+        }
+    }
+}
+
+
+// SCHEDULE CARDS SECTIONS
 
 .schedulecards {
     display: grid;
@@ -31,12 +56,13 @@
 .scard {
     height: 250px;
     width: 364px;
+    background-color: #F0F2F8;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    background-color: $schedulecard-hover;
+    
 
    .scardtop {
     display: flex;
@@ -51,7 +77,7 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background-color: pink;
+            
             margin-right: 2px;
     }
    }
@@ -75,3 +101,91 @@
        }
     }
 }}
+
+// INDIVIDUAL CARD STYLES
+
+.sc1 {
+
+    .sc1s {
+        background-color: rgb(65, 91, 255);
+       
+        }
+    &:hover {
+        color: white;
+        background-color: rgb(65, 91, 255);
+        .sc1s{
+            background-color: white;
+        }
+    }
+}
+
+.sc2 {
+
+    .sc2s {
+        background-color: #ffdc49;
+       
+        }
+    &:hover {
+        color: black;
+        background-color: #ffdc49;
+        .sc2s{
+            background-color: black;
+        }
+    }
+}
+.sc3 {
+
+    .sc3s {
+        background-color: rgb(65, 91, 255);
+       
+        }
+    &:hover {
+        color: white;
+        background-color: rgb(65, 91, 255);
+        .sc3s{
+            background-color: white;
+        }
+    }
+}
+.sc4 {
+
+    .sc4s {
+        background-color: red;
+       
+        }
+    &:hover {
+        color: white;
+        background-color: red;
+        .sc4s{
+            background-color: #ffdc49;
+        }
+    }
+}
+.sc5 {
+
+    .sc5s {
+        background-color: rgb(65, 255, 75);
+       
+        }
+    &:hover {
+        color: white;
+        background-color: rgb(65, 255, 75);
+        .sc5s{
+            background-color: rgb(217, 17, 243);
+        }
+    }
+}
+.sc6 {
+
+    .sc6s {
+        background-color: rgb(50, 169, 190);
+       
+        }
+    &:hover {
+        color: white;
+        background-color: rgb(50, 169, 190);
+        .sc6s{
+            background-color: rgb(153, 78, 28);
+        }
+    }
+}
