@@ -1,0 +1,44 @@
+@use '../breakpoints/' as *;
+@use '../globals/' as *;
+
+
+.cruch-video{
+    width: 100%;
+    height: 500px;
+    padding: 4rem 6rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include crunchsec-bg;
+    background-color: grey;
+}
+
+.caption {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 400px;
+}
+
+.play-video{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 30px;
+    .watch-vid{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .vidplay-icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: white;
+        @include vidplay-gb;
+        &:hover{
+            cursor: pointer;
+            scale: 1.05;
+        }
+    }
+}

@@ -78,4 +78,107 @@
 }
 
 
-// 
+//  TRAINER CARDS 
+
+@mixin trc1-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer.jpg);
+}
+@mixin trc2-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer-2.jpg);
+}
+@mixin trc3-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer_3.jpg);
+}
+@mixin trc4-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer_4.jpg);
+}
+@mixin trc5-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer_5.jpg);
+}
+@mixin trc6-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    &:hover{
+        filter: brightness(85%);
+    }
+    background-position: center;
+    background-image: url(/images/trainer.jpg);
+}
+
+// TRAINER SOCIAL ICONS
+
+@mixin soc-twitter {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-image: url(/images/twitter.svg);
+}
+
+@mixin soc-linkedin {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-image: url(/images/linkedin-in.svg);
+}
+
+@mixin soc-insta {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-image: url(/images/instagram.svg);
+}
+
+
+// CRUNCH VIDEO PLAY 
+
+@mixin vidplay-gb{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    background-image: url(/images/play-solid.svg);
+}
+
+@mixin crunchsec-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    // filter: brightness(60%);
+    background-image: url(/images/video_img.jpg);
+}
