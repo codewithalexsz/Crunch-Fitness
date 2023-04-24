@@ -177,8 +177,48 @@
 @mixin crunchsec-bg {
     background-repeat: no-repeat;
     background-position: center;
-    background-blend-mode: hard-light;
+    // background-blend-mode: hard-light;
     background-size: 100% 100%;
     // filter: brightness(60%);
     background-image: url(/images/video_img.jpg);
+}
+
+
+// FOOTLANDING SECTION, GRID BG IMG
+
+@mixin flgrid1-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    // filter: brightness(60%);
+    background-image: url(/images/footlanding-1.jpg);
+
+}
+@mixin flgrid2-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    // filter: brightness(60%);
+    background-image: url(/images/footlanding-2.jpg);
+
+}
+@mixin flgrid3-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    // filter: brightness(60%);
+    background-image: url(/images/footlanding-3.jpg);
+
+}
+@mixin flgrid4-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-blend-mode: hard-light;
+    background-size: 100% 100%;
+    // filter: brightness(60%);
+    background-image: url(/images/footlanding-4.jpg);
+
 }
