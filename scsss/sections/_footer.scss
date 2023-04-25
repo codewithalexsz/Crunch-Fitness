@@ -1,0 +1,45 @@
+@use '../breakpoints/' as *;
+@use '../globals/' as *;
+
+
+footer {
+    background-color: brown;
+    padding: 4rem 3rem;
+}
+
+.ft-sec{
+    display: flex;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    .logo {
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+        .fitness{
+            color: cornflowerblue;
+        }
+    }
+    .f-socials {
+        display: flex;
+        gap: 15px;
+        a{
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(168, 157, 159);
+            border-radius: 50%;
+            > img {
+                width: 20px;
+            }
+        } 
+    }
+}
+
+.fb-sec{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
