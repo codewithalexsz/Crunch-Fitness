@@ -3,7 +3,7 @@
 
 
 footer {
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
     padding: 4rem 3rem;
 }
 
@@ -28,8 +28,11 @@ footer {
             width: 40px;
             justify-content: center;
             display: flex;
-            background-color: rgb(168, 157, 159);
+            background-color: rgb(160, 153, 154);
             border-radius: 50%;
+            &:hover{
+                background-color: white;
+            }
             > img {
                 width: 20px;
             }
@@ -40,6 +43,60 @@ footer {
 .fb-sec{
     padding: 2rem 0;
     display: flex;
+    color: white;
     justify-content: space-between;
 
+    .grid1{
+        .newslatter{
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: small;
+            max-width: 250px;
+        }
+        input {
+            padding: 10px;
+            border-radius: 20px;
+            border-style: none;
+            background-color: grey;
+            &::placeholder{
+                padding-left: 10px;
+                color: white;
+            }
+        }
+        button {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .grid2 {
+        
+        .links{
+            font-weight: 700;
+        }
+        .sitemap{
+            padding-top: 10px;
+            ul{
+                
+                padding-left: 0;
+                line-height: 1.5rem;
+                font-size: small;
+                a{
+                    color: rgb(224, 219, 219);
+                }
+            }
+        }
+        ul{
+            margin: 0;
+            text-align: left;
+        }
+    }
+}
+
+.copyright{
+    color: white;
+    font-size: small;
 }
