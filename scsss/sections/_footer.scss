@@ -94,6 +94,17 @@ footer {
             text-align: left;
         }
     }
+
+    .grid3{
+        p{
+            margin-top: 10px;
+            font-size: small;
+        }
+        .emailcontact{
+            margin-top: 10px;
+            color: $btn-bg-pink;
+        }
+    }
 }
 
 .copyright{
