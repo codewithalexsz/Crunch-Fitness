@@ -2,11 +2,55 @@
 @use '../globals/' as *;
 
 
+
+// RESPONSIVE QUERIES
+@include devices(mobile) {
+    .header{
+        height: 500px !important;
+    }
+    nav{
+        
+        padding: 1rem;
+        height: fit-content;
+        ul {
+            display: flex;
+            gap: 0.5rem;
+            font-weight: 700;
+            a {
+                color: white;
+                font-size: 10px;
+            }
+        }
+        .logo{
+            font-size: 0.8rem !important;
+            
+        }
+        
+    }
+    .hero {
+        color: white;
+        text-align: center;
+        h1 {
+            margin: 0 auto;
+            font-weight: $header-fontweight;
+            font-size: 20px !important;
+            max-width: 15rem !important;
+        }
+        p{
+            font-size: 10px !important;
+        }
+        
+    }
+}
 // HEDER
 .header{
     display: grid;
     @include header-bg;
     height: 900px;
+
+    
+
+
     nav{
         display: flex;
         align-items: center;
@@ -48,4 +92,11 @@
 
 button {
     @include btn-pink;
-}
+   
+    }
+
+    .nav-btn{
+        @include devices (mobile) {
+            display: none;
+        }
+    }

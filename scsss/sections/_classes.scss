@@ -3,6 +3,12 @@
 @use '../globals/' as *;
 
 
+
+// RESPONSIVE QUERIES
+@include devices(mobile) {
+
+}
+
 .classes {
     background-color: #080b14;
     padding: 2.3rem;
@@ -10,6 +16,9 @@
 
 
     .ourclasses{
+        @include devices(mobile) {
+            font-size: 20px;
+        }
         color: white;
         margin-bottom: 25px;
         font-size: $txt-miniheader-fontsize;
@@ -24,6 +33,18 @@
         gap: 10px;
 
         .ccard {
+            @include devices(mobile) {
+                flex-direction: column-reverse;
+                height: max-content;
+                width: max-content !important;
+                padding: 2rem !important;
+                text-align: center;
+                .ccimg img{
+                    width: 200px;
+                    height: 190px;
+                }
+            }
+
             color: white;
             align-items: center;
             display: flex;
@@ -38,6 +59,11 @@
             
 
             .ccinfo{
+                @include devices(mobile) {
+                    gap: 30px;
+                    margin-top: 10px;
+                    
+                }
                 display: flex;
                 flex-direction: column;
                  gap: 100px;

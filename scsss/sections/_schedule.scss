@@ -2,10 +2,26 @@
 @use '../globals/' as *;
 
 
+
+// RESPONSIVE QUERIES
+
+@include devices(mobile) {
+
+}
+
+
 .schedules {
     padding: 75px 0;
 
     .sechead {
+        @include devices(mobile) {
+            padding: 2rem ;
+            flex-direction: column;
+            gap: 5px;
+            .schedule {
+                font-size: 28px !important;
+            }
+        }
         display: flex;
         justify-content: space-between;
         padding: 2.4rem 8rem;
@@ -29,6 +45,13 @@
 // SCHEDULE CARDS SECTIONS
 
 .schedulecards {
+
+    @include devices(mobile) {
+grid-template-columns: auto;
+    }
+    @include devices(tablet) {
+        grid-template-columns: auto auto;
+    }
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto;
