@@ -78,12 +78,17 @@
                  gap: 100px;
                 justify-content: space-between;
                 .ccfoot{
+                    
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
                 }
             }
             .ccdesc{
+                @include devices(mobile) {
+                    font-size: 15px;
+                    max-width: 4rem;
+                }
                 max-width: 9rem;
                 font-weight: $txt-miniheader-fontweight;
                 font-size: 19px;
