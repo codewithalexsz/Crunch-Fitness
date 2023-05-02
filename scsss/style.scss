@@ -1,11 +1,23 @@
-@use 'breakpoints';
-@use 'globals';
-@use 'sections';
+@use 'breakpoints' as *;
+@use 'globals' as *;
+@use 'sections' as *;
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 p{
     margin-top: 0;
 }
 
+a {
+    padding-bottom: 2px;
+    &:hover{
+        color: $btn-bg-pink !important;
+        border-bottom: 2px solid rgba(255, 192, 203, 0.664);
+    }
+}
 a, a:visited {
     text-decoration: none;
 }
