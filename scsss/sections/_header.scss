@@ -9,8 +9,10 @@
         height: 500px !important;
     }
     nav{
-        
-        padding: 1rem;
+        border-radius: 60px;
+        background-color: rgba(255, 68, 0, 0.164);
+        padding:0 0.1rem;
+        margin: 6px;
         height: fit-content;
         ul {
             display: flex;
@@ -42,6 +44,8 @@
         
     }
 }
+
+
 // HEDER
 .header{
     display: grid;
