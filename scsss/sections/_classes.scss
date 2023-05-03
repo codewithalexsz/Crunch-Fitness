@@ -4,10 +4,10 @@
 
 
 // SCROLL CONTAAINER
-.classcards {
-    overflow: auto;
-  white-space: nowrap;
-}
+// .classcards {
+//     overflow: hidden;
+//   white-space: nowrap;
+// }
 
 
 
@@ -21,6 +21,9 @@
 .classes {
     background-color: #080b14;
     padding: 2.3rem;
+    display: block;
+    // width: 1000px;
+    // overflow-x: auto;
     
 
 
@@ -38,7 +41,7 @@
     .classcards{
         display: flex;
         
-        width: fit-content;
+        // width: fit-content;
         gap: 10px;
 
         .ccard {

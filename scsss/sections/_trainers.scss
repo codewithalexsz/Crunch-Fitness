@@ -7,11 +7,12 @@
 }
 
 .trainers {
-    display: flex;
+    display: block;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.877);
     color: white;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
+    width: 100%;
 }
 
 .ourtrainers{
@@ -25,10 +26,13 @@
 }
 
 .tcards {
-    display: flex;
+    // background-color: yellow;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     gap: 15px;
-    width: max-content;
-    overflow: visible;
+    width: 100%;
+    overflow-x: scroll;
     
 }
 

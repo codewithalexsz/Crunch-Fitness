@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crunch Fitness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,12 +38,18 @@
      <main>
         <!-- CLASES SECTION -->
 
-        <section class="classes">
-            <div class="ourclasses">Our Classes</div>
+        <section class="classes Swiper myswiper">
+            <div class="classsec_top">
+                <div class="ourclasses">Our Classes</div>
+                <div class="swiper-btns">
+                    <!-- we need navigation buttons -->
+                    
+                </div>
+            </div>
 
             <!-- CLASS CARDS -->
-            <div class="classcards">
-                <div class="ccard ccd1">
+            <div class="classcards swiper-wrapper">
+                <div class="ccard ccd1 swiper-slide">
                     <div class="ccinfo">
                         <div class="cctitle">Yoga</div>
                         <div class="ccfoot">
@@ -56,7 +64,7 @@
                         <img src="images/yoga.jpg" alt="">
                     </div>
                 </div>
-                <div class="ccard ccd2">
+                <div class="ccard ccd2 swiper-slide">
                     <div class="ccinfo">
                         <div class="cctitle">Swimming</div>
                         <div class="ccfoot">
@@ -71,7 +79,7 @@
                         <img src="images/swim.jpg" alt="">
                     </div>
                 </div>
-                <div class="ccard ccd3">
+                <div class="ccard ccd3 swiper-slide">
                     <div class="ccinfo">
                         <div class="cctitle">Fitness</div>
                         <div class="ccfoot">
@@ -86,7 +94,7 @@
                         <img src="images/fitness.jpg" alt="">
                     </div>
                 </div>
-                <div class="ccard ccd4">
+                <div class="ccard ccd4 swiper-slide">
                     <div class="ccinfo">
                         <div class="cctitle">Abdominal Workout</div>
                         <div class="ccfoot">
@@ -101,7 +109,7 @@
                         <img src="images/crunch abs.jpg" alt="">
                     </div>
                 </div>
-                <div class="ccard" >
+                <div class="ccard swiper-slide" >
                     <div class="ccinfo">
                         <div class="cctitle"></div>
                         <div class="ccfoot">
@@ -117,6 +125,7 @@
                     </div>
                 </div>
             </div>
+           
         </section>
 
         <!-- SCHEDULE SECTION -->
@@ -237,7 +246,7 @@
         <!-- TRAINERS SECTION -->
         <section class="trainers">
             <div class="ourtrainers">Our Trainers</div>
-            <div class="tcards">
+            <div class="tcards trainer-wrapper">
                 <div class="trcard trc1">
                     <div class="tcbio">
                         <div class="tcauthor">John Digistrict</div>
@@ -385,5 +394,9 @@
             </div>
         </div>
      </footer>
+
+     <!-- SWIPER JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     <script src="crunch.js"></script>
 </body>
 </html>
