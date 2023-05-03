@@ -20,6 +20,8 @@ padding: 3rem 0;
     }
 }
 
+
+
 // FOOTLANDIND SECTION
 
 .foot-landing {
@@ -29,6 +31,13 @@ padding: 3rem 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include devices(mobile) {
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     overflow-x: scroll;  
+    //  background-color: yellow;
+    }
 }
 .flgrid{
     display: flex;
